@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+:root {
+
+    /* Brand Colors */
+    --primary-color: #0ea5e9;
+    --primary-hover-color: #0284c7;
+    --primary-light-color: #e0f2fe;
+
+    /* Text Colors */
+    --text-color: #0f172a;
+    --text-light-color: #64748b;
+
+    /* Background Colors */
+    --background-color: #ffffff;
+    --background-light-color: #f8fafc;
+
+    /* Border Colors */
+    --border-color: #e2e8f0;
+
+    /* Font Family */
+    --font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+/* Global Styles */
+body {
+
+    font-family: var(--font-family);
+
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+
+}
+
+/* Utility Classes */
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.primary-hover:hover {
+    color: var(--primary-hover-color);
+}
+
+.primary-bg-light {
+    background-color: var(--primary-light-color);
+}
+
+.custom-border {
+    border-color: var(--border-color);
+}
+
+.transition-default {
+    transition: all 0.3s ease;
+}
+
+/*  Hide scrollbar */
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
